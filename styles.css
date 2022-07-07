@@ -1,0 +1,128 @@
+body{
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    width: 600px;
+    height: 450px;
+    display: flex;
+}
+
+.product-image{
+    height: 100%;
+    width: 50%;
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: cover;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.product-info{
+    background-color: #ffffff;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 35px;
+}
+
+.category-title{
+    font-family: Montserrat;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 400;
+}
+
+.product-title{
+    font-family: Fraunces;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+}
+
+.product-description{
+    font-family: Montserrat;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 400;
+}
+ .price-tag{
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+ }
+
+ .new-price{
+    font-family: Fraunces;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 33%, 38%);
+ }
+
+ .old-price {
+    font-family: Montserrat;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    align-items: center;
+    text-decoration: line-through;
+ }
+
+ .cart-button{
+    font-family: Montserrat;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    background-color: hsl(158, 36%, 37%);
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 14px 20px;
+    width: 100%;
+ }
+
+ .cart-button svg {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 10px;
+ }
+
+ .cart-button:hover{
+    background-color: hsl(155, 40%, 18%);
+ }
+
+ @media only screen and (max-width: 768px) {
+    .wrapper{
+        width: 90%;
+        min-height: 95%;
+        flex-direction: column;
+    }
+    .product-image{
+        background-image: url("images/image-product-mobile.jpg");
+        border-radius: 0;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        height: 40%;
+        width: 100%;
+    }
+    .product-info{
+        border-radius: 0;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+}
